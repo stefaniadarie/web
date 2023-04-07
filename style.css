@@ -3,6 +3,7 @@ body {
     opacity: 1;
     background-image:  linear-gradient(#cdcdcd 1.5px, transparent 1px), linear-gradient(to right, #cdcdcd 1.5px, #f4f4f4 1px);
     background-size: 20px 20px;
+    /* overflow: hidden ; */
 }
   
 /* The browser window */
@@ -10,8 +11,8 @@ body {
   background-color: #f4f4f4;
     border: 1.5px solid #4d4d4d;
     height: 300px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     border-radius: 20px;
     margin-right: 100px;
     margin-left: 100px;
@@ -72,11 +73,27 @@ body {
   
 
   /* position */
-.container-position{
-  position: relative;
-  left: 30px;
-}
 
 .center {
-  margin: auto;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+#overlay1 {
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0px;
+  left: 0px;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#overlay2 {
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  left: 35px;
+  top: 35px;
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
 }

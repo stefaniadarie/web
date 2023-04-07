@@ -3,80 +3,44 @@ body {
     opacity: 1;
     background-image:  linear-gradient(#cdcdcd 1.5px, transparent 1px), linear-gradient(to right, #cdcdcd 1.5px, #f4f4f4 1px);
     background-size: 20px 20px;
+    /* overflow: hidden ; */
 }
-
-container-body {
-    font-family: Arial
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
   
 /* The browser window */
-.container {
+.large-container {
+  background-color: #f4f4f4;
     border: 1.5px solid #4d4d4d;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-radius: 20px
+    height: 300px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-radius: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+
   }
   
   /* Container for columns and the top "toolbar" */
   .row {
+    height: 1.5vw;
     padding: 8px;
     background: #e6e6e6;
     border-radius: 20px 20px 0px 0px;
     border-bottom: 1.5px solid #4d4d4d;
   }
   
-  /* Create three unequal columns that floats next to each other */
-  .column {
-    float: left;
-  }
-  
-  .left {
-    width: 15%;
-  }
-  
-  .right {
-    width: 10%;
-  }
-  
-  .middle {
-    width: 75%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+
   /* Three dots */
   .dot {
     margin-top: 4px;
-    height: 15px;
-    width: 15px;
+    height: 1vw;
+    width: 1vw;
     border: 1.5px solid black;
-    background-color: #bbb;
+    background:#f4f4f4;
     border-radius: 50%;
     display: inline-block;
   }
-  
-  /* Style the input field
-  input[type=text] {
-    width: 100%;
-    border-radius: 3px;
-    border: none;
-    background-color: white;
-    margin-top: -8px;
-    height: 25px;
-    color: #4d4d4d;
-    padding: 5px;
-  }*/
-  
-  /* Three bars (hamburger menu) */
+
+  /*close, minimize, maximaze - in progress*/
   .bar {
     width: 17px;
     height: 3px;
@@ -87,8 +51,16 @@ container-body {
   
   
   /* Page content */
-  .content {
+  .title{
     padding: 10px;
+    font-family: Verdana;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  .content {
+    padding:1vw;
+    font-family: "Lucida Console"; 
   }
   .btn {
     background-color: f4f4f4;
@@ -98,3 +70,30 @@ container-body {
     font-size: 16px;
     cursor: pointer;
   }
+  
+
+  /* position */
+
+.center {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+#overlay1 {
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0px;
+  left: 0px;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#overlay2 {
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  left: 35px;
+  top: 35px;
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+}

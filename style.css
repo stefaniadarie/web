@@ -3,7 +3,7 @@ body {
     opacity: 1;
     background-image:  linear-gradient(#cdcdcd 1.5px, transparent 1px), linear-gradient(to right, #cdcdcd 1.5px, #f4f4f4 1px);
     background-size: 20px 20px;
-    /* overflow: hidden ; */
+    overflow: hidden ;
 }
   
 /* The browser window */
@@ -23,7 +23,7 @@ body {
   .row {
     height: 1.5vw;
     padding: 8px;
-    background: #e6e6e6;
+    background:  #cccccc;
     border-radius: 20px 20px 0px 0px;
     border-bottom: 1.5px solid #4d4d4d;
   }
@@ -63,20 +63,60 @@ body {
     font-family: "Lucida Console"; 
   }
   .btn {
-    background-color: f4f4f4;
+    background-color: #f4f4f4;
     border: none;
     color: black;
     padding: 12px 15px;
     font-size: 16px;
     cursor: pointer;
   }
+
+  .signUpBtn{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+  }
+  .logInBtn{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+  }
+  .aboutBtn{
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    width: 17%;
+    text-align:left;
+  }
+  .helpBtn{
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    z-index: 4;
+    width: 14%;
+    text-align:left;
+  }
   
+  .signUpBtn,.logInBtn,.helpBtn,.aboutBtn {
+    border: 1.5px solid #4d4d4d;
+    background-color: #f4f4f4;
+    padding: 14px 28px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 25px;
+  }
+  /* On mouse-over */
+.signUpBtn:hover, .logInBtn:hover, .helpBtn:hover, .aboutBtn:hover {
+  background: #cccccc;
+}
 
   /* position */
 
 .center {
   position: absolute;
-  top: 20%;
+  top: 25%;
   width: 100%;
 }
 
@@ -96,4 +136,37 @@ body {
   left: 35px;
   top: 35px;
   z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+/* shapes */
+
+#star-six {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #000000;
+  position: relative;
+}
+#star-six:after {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #000000;
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: -50px;
+}
+
+.circle {
+  height: 300px;
+  width: 300px;
+  background-color: #004A98;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -130px;
+  right: 15px;
+  z-index: 3;
 }

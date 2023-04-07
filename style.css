@@ -3,11 +3,11 @@ body {
     opacity: 1;
     background-image:  linear-gradient(#cdcdcd 1.5px, transparent 1px), linear-gradient(to right, #cdcdcd 1.5px, #f4f4f4 1px);
     background-size: 20px 20px;
-    overflow: hidden ;
+    /* overflow: hidden ; */
 }
   
 /* The browser window */
-.large-container {
+.window {
   background-color: #f4f4f4;
     border: 1.5px solid #4d4d4d;
     height: 300px;
@@ -18,6 +18,19 @@ body {
     margin-left: 100px;
 
   }
+
+  .smallerwindow {
+    background-color: #f4f4f4;
+      border: 1.5px solid #4d4d4d;
+      height: 400px;
+      width: 500px;
+      top: 20%;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-radius: 20px;
+      margin-left: 80px;
+      position: absolute;
+    }
   
   /* Container for columns and the top "toolbar" */
   .row {
@@ -27,7 +40,14 @@ body {
     border-radius: 20px 20px 0px 0px;
     border-bottom: 1.5px solid #4d4d4d;
   }
-  
+
+  .horizContainer{
+    height: 1.5vw;
+    padding: 8px;
+    background:  #cccccc;
+    border-radius: 0px 0px 20px 20px;
+    border: 1.5px solid #4d4d4d;
+  }
 
   /* Three dots */
   .dot {
@@ -57,19 +77,41 @@ body {
     text-align: center;
     font-size: 5vw;
     font-weight: bold;
+    /* width: fit-content;
+    block-size: fit-content; */
   }
   .content {
     padding:1vw;
     font-family: "Lucida Console"; 
+    width: fit-content;
+    block-size: fit-content;
   }
-  .btn {
-    background-color: #f4f4f4;
-    border: none;
-    color: black;
-    padding: 12px 15px;
-    font-size: 16px;
-    cursor: pointer;
+  
+  /* menu */
+  .menu{
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    width: 14%;
+    text-align:left;
   }
+
+  .searchBar{
+    position: absolute;
+    top: 2.5%;
+    left: 28%;
+    width: 40%;
+    text-align:left;
+  }
+
+  .account{
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    width: 14%;
+    text-align:left;
+  }
+
 
   .signUpBtn{
     position: absolute;
@@ -97,7 +139,7 @@ body {
     text-align:left;
   }
   
-  .signUpBtn,.logInBtn,.helpBtn,.aboutBtn {
+  .signUpBtn,.logInBtn,.helpBtn,.aboutBtn,.account,.searchBar,.menu {
     border: 1.5px solid #4d4d4d;
     background-color: #f4f4f4;
     padding: 14px 28px;
@@ -108,7 +150,7 @@ body {
     font-size: 25px;
   }
   /* On mouse-over */
-.signUpBtn:hover, .logInBtn:hover, .helpBtn:hover, .aboutBtn:hover {
+.signUpBtn:hover, .logInBtn:hover, .helpBtn:hover, .aboutBtn:hover, .searchBar:hover, .account:hover {
   background: #cccccc;
 }
 
@@ -161,8 +203,8 @@ body {
 }
 
 .circle {
-  height: 300px;
-  width: 300px;
+  height: 22vw;
+  width: 22vw;
   background-color: #004A98;
   border-radius: 50%;
   position: absolute;
@@ -170,3 +212,10 @@ body {
   right: 15px;
   z-index: 3;
 }
+
+.insertImage{
+  height: 83%;
+  width: 83%;
+  display: flex;
+}
+

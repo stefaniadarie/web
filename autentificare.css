@@ -1,127 +1,129 @@
 body {
-    /* !!!!! background-color: #f4f4f4; */
-    opacity: 1;
-    background-image:  linear-gradient(#cdcdcd 1.5px, transparent 1px), linear-gradient(to right, #cdcdcd 1.5px, #f4f4f4 1px);
-    background-size: 20px 20px;
+  /* !!!!! background-color: #f4f4f4; */
+  opacity: 1;
+  background-image: linear-gradient(#cdcdcd 1.5px, transparent 1px), linear-gradient(to right, #cdcdcd 1.5px, #f4f4f4 1px);
+  background-size: 20px 20px;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 70px;
-  }
-  
-  .screen1 {
-    width: 500px;
-    height: 350px;
-    border: 1.5px solid #4d4d4d;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-radius: 20px 20px 20px 20px;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
 
-  .screen2 {
-    width: 700px;
-    height: 350px;
-    border: 1.5px solid #4d4d4d;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-radius: 20px 20px 20px 20px;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-  }
-  
-  .header {
-    height: 30px;
-    border-bottom: 1px solid black;
-    padding: 8px;
-    background-color: #cccccc;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
+.screen1 {
+  width: 500px;
+  height: 350px;
+  border: 1.5px solid #4d4d4d;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
 
-  .dot {
-    margin-top: 4px;
-    height: 1vw;
-    width: 1vw;
-    border: 1.5px solid black;
-    background:#f4f4f4;
-    border-radius: 50%;
-    display: inline-block;
-  }
+.screen2 {
+  width: 700px;
+  height: 350px;
+  border: 1.5px solid #4d4d4d;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
 
-  .dot:nth-of-type(1) {
-    background-color: crimson
-  }
+.header {
+  height: 30px;
+  border-bottom: 1px solid black;
+  padding: 8px;
+  background-color: #cccccc;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
-  .dot:nth-of-type(2) {
-    background-color:goldenrod;
-  }
+.dot {
+  margin-top: 4px;
+  height: 1vw;
+  width: 1vw;
+  border: 1.5px solid black;
+  background: #f4f4f4;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-  .dot:nth-of-type(3) {
-    background-color: chartreuse;
-  }
-  
-  .body {
-    flex: 1;
-    padding: 10px;
-    margin-bottom: 1.5px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    
-  }
-  .margin-left {
-        margin-left: 60px;
-      
-  }
+.dot:nth-of-type(1) {
+  background-color: crimson
+}
 
-  .margin-right {
-    margin-right: 60px;
-  }
+.dot:nth-of-type(2) {
+  background-color: goldenrod;
+}
 
-  .text {
-    font-size: 30px;
+.dot:nth-of-type(3) {
+  background-color: chartreuse;
+}
+
+.body {
+  flex: 1;
+  padding: 10px;
+  margin-bottom: 1.5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+
+.margin-left {
+  margin-left: 60px;
+
+}
+
+.margin-right {
+  margin-right: 60px;
+}
+
+.text {
+  font-size: 30px;
   font-weight: bold;
   font-family: Arial, sans-serif;
   text-align: center;
   /* line-height: 0; */
-  }
+}
 
-  .text1 {
-    font-size: 12px;
-    font-family: Arial, sans-serif;
-  }
+.text1 {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
 
-  .gluma {
-    font-size: 20px;
-    font-style: italic;
-  }
+.gluma {
+  font-size: 20px;
+  font-style: italic;
+}
 
-  .auth {
-    font-size: 25px;
-    text-align: center;
-  }
+.auth {
+  font-size: 25px;
+  text-align: center;
+}
 
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input[type="email"], input[type="password"] {
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-  }
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
 
 .text-auth {
   font-size: 20px;
@@ -141,17 +143,17 @@ input[type="submit"] {
   font-size: 15px;
 }
 
-.aboutBtn { 
-    border: 1.5px solid #4d4d4d;
-    background-color: #f4f4f4;
-    padding: 14px 28px;
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 25px;
-    margin-top: 70px;
-    margin-left: 70px;
+.aboutBtn {
+  border: 1.5px solid #4d4d4d;
+  background-color: #f4f4f4;
+  padding: 14px 28px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 70px;
+  margin-left: 70px;
 }
 
 .cursorPointer {
@@ -186,13 +188,12 @@ input[type="submit"] {
 }
 
 .btn-back {
-  background-color:rgb(38, 145, 211);
-  color: white; 
-  padding: 10px 20px; 
-  text-align: center; 
-  display: inline-block; 
-  font-size: 18px; 
-  margin: 10px 0; 
+  background-color: rgb(38, 145, 211);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px 0;
   cursor: pointer;
 }
-

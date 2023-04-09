@@ -1,12 +1,12 @@
-:root{
-  --yellow:#ffce38;
-  --blue:  #004A98;
+:root {
+  --yellow: #ffce38;
+  --blue: #004A98;
   --white: #f4f4f4;
   --gray1: #cdcdcd;
   --gray2: #cccccc;
   --gray3: #818181;
   --gray4: #4d4d4d;
- }
+}
 
 body {
   opacity: 1;
@@ -297,7 +297,7 @@ body {
   color: var(--white);
 }
 
-.icons{
+.icons {
   background-color: var(--white);
   border: 1.5px solid black;
   border-radius: 50%;
@@ -319,7 +319,7 @@ body {
   left: 12%;
 }
 
-.help-section .circleplus{
+.help-section .circleplus {
   margin-left: 90%;
 }
 

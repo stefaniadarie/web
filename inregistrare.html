@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Inregistrare</title>
-    <link rel="stylesheet" href="inregistrare.css">
+  <meta charset="UTF-8">
+  <title>Inregistrare</title>
+  <link rel="stylesheet" href="inregistrare.css">
 </head>
+
 <body>
-    <button class="btn-back" onclick="location.href = 'index.html' ">&lt;- Inapoi spre pagina principala </button>
-    <!-- o componenta cu cele 2 ecrane (casete) -->
-    <div class="container">
-      <!-- PRIMUL ecran -->
-      <div class="screen1 margin-left">
-        <div class="header">
-          <!-- conținutul casetei pentru header -->
-          <span class="dot" ></span>
-          <span class="dot" ></span>
-          <span class="dot" ></span>
-        </div>
-        <div class="body">
-          <!-- conținutul casetei pentru body -->
-          <p class="text">Ne bucuram ca ai ales sa iti faci cont pe In&lt;form&gt;atiX!</p>
-        </div>
+  <button class="btn-back" onclick="location.href = 'index.html' ">&lt;- Inapoi spre pagina principala </button>
+  <!-- o componenta cu cele 2 ecrane (casete) -->
+  <div class="container">
+    <!-- PRIMUL ecran -->
+    <div class="screen1 margin-left">
+      <div class="header">
+        <!-- conținutul casetei pentru header -->
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
-      <!-- al DOILEA ecran -->
-      <div class="screen2 margin-right">
-        <div class="header">
-          <!-- conținutul casetei pentru header -->
-          <span class="dot" ></span>
-          <span class="dot" ></span>
-          <span class="dot" ></span>
-        </div>
-        <div class="body">
-          <!-- conținutul casetei pentru body -->
-          <h2 class="register">Inregistrare</h2>
-          <form class="form-row" method="post">
-            <!-- <fieldset> -->
-                <div class="left">
-                    <!-- formularul pentru datele personale -->
-                    <label for="nume">Nume:</label>
-                    <input type="text" id="nume" name="nume"><br>
-                    <label for="prenume">Prenume:</label>
-                    <input type="text" id="prenume" name="prenume"><br>
-                    <label for="data-nasterii">Data nașterii:</label>
-                    <input type="date" id="data-nasterii" name="data-nasterii"><br>
-                  </div>
-                  <div class="right">
-                    <!-- formularul pentru datele de autentificare -->
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="nume-utilizator">Nume utilizator:</label>
-                    <input type="text" id="nume-utilizator" name="nume-utilizator"><br>
-                    <label for="parola">Parola:</label>
-                    <input type="password" id="parola" name="parola"><br>
-                    <label for="confirmare-parola">Confirmare parola:</label>
-                    <input type="password" id="confirmare-parola" name="confirmare-parola"><br>
-                  </div>
-                  <div style="clear:both;"></div>
-    
-            <!-- </fieldset> -->
-            <label for="referrer">Selecteaza tipul de utilizator: 
-                <select id="referrer" name="referrer">
-                  <option value="">(select one)</option>
-                  <option value="1">Student</option>
-                  <option value="2">Profesor</option>
-                  <option value="3">Administrator</option>
-                </select>
-              </label>
-            <input class="cursorPointer" type="submit" value="Creaaza cont" />  
-        </form>   
-        </div>
+      <div class="body">
+        <!-- conținutul casetei pentru body -->
+        <p class="text">Ne bucuram ca ai ales sa iti faci cont pe In&lt;form&gt;atiX!</p>
       </div>
     </div>
-   
-    <div><button class="aboutBtn" onclick="location.href = 'about.html' ">Despre noi &#9432;</button></div>
-    <div class="circle"></div>
-    <button class="helpBtn" onclick="location.href = 'help.html' ">Ajutor</button>
-  </body>
+    <!-- al DOILEA ecran -->
+    <div class="screen2 margin-right">
+      <div class="header">
+        <!-- conținutul casetei pentru header -->
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="body">
+        <!-- conținutul casetei pentru body -->
+        <h2 class="register">Inregistrare</h2>
+        <form class="form-row" method="post">
+          <!-- <fieldset> -->
+          <div class="left">
+            <!-- formularul pentru datele personale -->
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume"><br>
+            <label for="prenume">Prenume:</label>
+            <input type="text" id="prenume" name="prenume"><br>
+            <label for="data-nasterii">Data nașterii:</label>
+            <input type="date" id="data-nasterii" name="data-nasterii"><br>
+          </div>
+          <div class="right">
+            <!-- formularul pentru datele de autentificare -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="nume-utilizator">Nume utilizator:</label>
+            <input type="text" id="nume-utilizator" name="nume-utilizator"><br>
+            <label for="parola">Parola:</label>
+            <input type="password" id="parola" name="parola"><br>
+            <label for="confirmare-parola">Confirmare parola:</label>
+            <input type="password" id="confirmare-parola" name="confirmare-parola"><br>
+          </div>
+          <div style="clear:both;"></div>
+
+          <!-- </fieldset> -->
+          <label for="referrer">Selecteaza tipul de utilizator:
+            <select id="referrer" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">Student</option>
+              <option value="2">Profesor</option>
+              <option value="3">Administrator</option>
+            </select>
+          </label>
+          <input class="cursorPointer" type="submit" value="Creaaza cont" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div><button class="aboutBtn" onclick="location.href = 'about.html' ">Despre noi &#9432;</button></div>
+  <div class="circle"></div>
+  <button class="helpBtn" onclick="location.href = 'help.html' ">Ajutor</button>
+</body>
 
 
 

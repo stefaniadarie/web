@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta charset="UTF-8">
-    <title>Autentificare</title>
-    <link rel="stylesheet" href="autentificare.css">
 
-  </head>
-  <body>
-    <button class="btn-back" onclick="location.href = 'index.html' ">&lt- Inapoi spre pagina principala </button>
-    <!-- o componenta cu cele 2 ecrane (casete) -->
-    <div class="container">
-      <!-- PRIMUL ecran -->
-      <div class="screen1 margin-left">
-        <div class="header">
-          <!-- conținutul casetei pentru header -->
-          <span class="dot" ></span>
-          <span class="dot" ></span>
-          <span class="dot" ></span>
-        </div>
-        <div class="body">
-          <!-- conținutul casetei pentru body -->
-          <p class="text">Bine ai revenit pe In&lt;form&gt;atiX!</p>
-          <p class="gluma">De cati programatori este nevoie pentru a schimba un bec?
-            De niciunul, este o problema de hardware.
-          </p>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Autentificare</title>
+  <link rel="stylesheet" href="autentificare.css">
+
+</head>
+
+<body>
+  <button class="btn-back" onclick="location.href = 'index.html' ">&lt- Inapoi spre pagina principala </button>
+  <!-- o componenta cu cele 2 ecrane (casete) -->
+  <div class="container">
+    <!-- PRIMUL ecran -->
+    <div class="screen1 margin-left">
+      <div class="header">
+        <!-- conținutul casetei pentru header -->
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
-      <!-- al DOILEA ecran -->
-      <div class="screen2 margin-right">
-        <div class="header">
-          <!-- conținutul casetei pentru header -->
-          <span class="dot" ></span>
-          <span class="dot" ></span>
-          <span class="dot" ></span>
-        </div>
-        <div class="body">
-          <!-- conținutul casetei pentru body -->
-          <h2 class="auth">Autentificare</h2>
-          <form method="post">
-            <!-- <fieldset> -->
-            <label class="text-auth" for="email">Email:</label>
-            <input class="password" type="email" id="email" name="email" placeholder="Introduceti adresa de email">
-
-            <label class="text-auth" for="password">Parola:</label>
-            <input class="password" type="password" id="password" name="password" placeholder="Introduceti parola">
-            <!-- </fieldset> -->
-            <input class="cursorPointer" type="submit" value="Conectare" />
-          </form>   
-        </div>
+      <div class="body">
+        <!-- conținutul casetei pentru body -->
+        <p class="text">Bine ai revenit pe In&lt;form&gt;atiX!</p>
+        <p class="gluma">De cati programatori este nevoie pentru a schimba un bec?
+          De niciunul, este o problema de hardware.
+        </p>
       </div>
     </div>
-   
-    <div><button class="aboutBtn" onclick="location.href = 'about.html' ">Despre noi &#9432;</button></div>
-    <div class="circle"></div>
-    <button class="helpBtn" onclick="location.href = 'help.html' ">Ajutor</button>
-  </body>
+    <!-- al DOILEA ecran -->
+    <div class="screen2 margin-right">
+      <div class="header">
+        <!-- conținutul casetei pentru header -->
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="body">
+        <!-- conținutul casetei pentru body -->
+        <h2 class="auth">Autentificare</h2>
+        <form method="post">
+          <!-- <fieldset> -->
+          <label class="text-auth" for="email">Email:</label>
+          <input class="password" type="email" id="email" name="email" placeholder="Introduceti adresa de email">
+
+          <label class="text-auth" for="password">Parola:</label>
+          <input class="password" type="password" id="password" name="password" placeholder="Introduceti parola">
+          <!-- </fieldset> -->
+          <input class="cursorPointer" type="submit" value="Conectare" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div><button class="aboutBtn" onclick="location.href = 'about.html' ">Despre noi &#9432;</button></div>
+  <div class="circle"></div>
+  <button class="helpBtn" onclick="location.href = 'help.html' ">Ajutor</button>
+</body>
+
 </html>

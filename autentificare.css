@@ -34,6 +34,7 @@ body {
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
+    z-index: 2;
   }
   
   .header {
@@ -158,29 +159,40 @@ input[type="submit"] {
 }
 
 .circle {
-  height: 12vw;
-  width: 12vw;
+  height: 20vw;
+  width: 20vw;
   background-color: #004A98;
   border-radius: 50%;
   position: absolute;
-  bottom: 60px;
-  right: 80px;
+  bottom: 110px;
+  right: 20px;
   z-index: 1;
   opacity: 0.9;
 }
 
 .helpBtn {
-  border: 1.5px solid #4d4d4d;
+  border: 3px solid #141313;
   width: 90px;
   height: 50px;
   position: absolute;
-  bottom: 120px;
+  bottom: 150px;
   right: 120px;
   z-index: 2;
   background-color: #f4f4f4;
   color: black;
   padding: 10px 20px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-back {
+  background-color:rgb(38, 145, 211);
+  color: white; 
+  padding: 10px 20px; 
+  text-align: center; 
+  display: inline-block; 
+  font-size: 18px; 
+  margin: 10px 0; 
   cursor: pointer;
 }
 

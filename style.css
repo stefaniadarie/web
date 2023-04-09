@@ -280,7 +280,7 @@ body {
   background-color: #004A98;
   border-radius: 50%;
   position: relative;
-  left: 90%;
+  display: inline-block;
   bottom: 50%;
   z-index: 9;
   text-align: center;
@@ -288,7 +288,7 @@ body {
   color: #f4f4f4;
 }
 
-icon {
+.icons{
   background-color: #f4f4f4;
   border: 1.5px solid black;
   border-radius: 50%;
@@ -297,6 +297,7 @@ icon {
   width: 2vw;
   text-align: center;
   margin-left: 20px;
+  z-index: 7;
 }
 
 .menu .center,
@@ -306,7 +307,11 @@ icon {
 
 .menu .circleplus,
 .account-button .circleplus {
-  left: 55%;
+  left: 12%;
+}
+
+.help-section .circleplus{
+  margin-left: 90%;
 }
 
 .insertImage {

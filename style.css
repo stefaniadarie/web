@@ -1,7 +1,16 @@
+:root{
+  --yellow:#ffce38;
+  --blue:  #004A98;
+  --white: #f4f4f4;
+  --gray1: #cdcdcd;
+  --gray2: #cccccc;
+  --gray3: #818181;
+  --gray4: #4d4d4d;
+ }
+
 body {
-  /* !!!!! background-color: #f4f4f4; */
   opacity: 1;
-  background-image: linear-gradient(#cdcdcd 1.5px, transparent 1px), linear-gradient(to right, #cdcdcd 1.5px, #f4f4f4 1px);
+  background-image: linear-gradient(var(--gray1) 1.5px, transparent 1px), linear-gradient(to right, var(--gray1) 1.5px, var(--white) 1px);
   background-size: 20px 20px;
   overflow: hidden;
 
@@ -9,8 +18,8 @@ body {
 
 /* The browser window */
 .window {
-  background-color: #f4f4f4;
-  border: 1.5px solid #4d4d4d;
+  background-color: var(--white);
+  border: 1.5px solid var(--gray4);
   height: auto;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -22,8 +31,8 @@ body {
 }
 
 .smallerwindow {
-  background-color: #f4f4f4;
-  border: 1.5px solid #4d4d4d;
+  background-color: var(--white);
+  border: 1.5px solid var(--gray4);
   height: 400px;
   width: 500px;
   top: 20%;
@@ -39,17 +48,17 @@ body {
 .row {
   height: 1.5vw;
   padding: 8px;
-  background: #cccccc;
+  background: var(--gray2);
   border-radius: 20px 20px 0px 0px;
-  border-bottom: 1.5px solid #4d4d4d;
+  border-bottom: 1.5px solid var(--gray4);
 }
 
 .horizContainer {
   height: 1.5vw;
   padding: 8px;
-  background: #cccccc;
+  background: var(--gray2);
   border-radius: 0px 0px 20px 20px;
-  border: 1.5px solid #4d4d4d;
+  border: 1.5px solid var(--gray4);
 }
 
 /* Three dots */
@@ -58,7 +67,7 @@ body {
   height: 1vw;
   width: 1vw;
   border: 1.5px solid black;
-  background: #f4f4f4;
+  background: var(--white);
   border-radius: 50%;
   display: inline-block;
 }
@@ -67,7 +76,7 @@ body {
 .bar {
   width: 17px;
   height: 3px;
-  background-color: #4d4d4d;
+  background-color: var(--gray4);
   margin: 3px 0;
   display: block;
 }
@@ -96,24 +105,24 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #f4f4f4;
+  background-color: var(--white);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  border: 1.5px solid #4d4d4d;
+  border: 1.5px solid var(--gray4);
 }
 
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: var(--gray3);
   display: block;
   transition: 0.3s;
 }
 
 .sidepanel a:hover {
-  color: #4d4d4d;
+  color: var(--gray4);
 }
 
 .sidepanel .closebtn {
@@ -133,8 +142,8 @@ body {
 .menu,
 .account-button,
 .help-section {
-  border: 1.5px solid #4d4d4d;
-  background-color: #f4f4f4;
+  border: 1.5px solid var(--gray4);
+  background-color: var(--white);
   padding: 14px 28px;
   font-size: 20px;
   border-radius: 5px;
@@ -153,7 +162,7 @@ body {
 .menu:hover,
 .account-button:hover,
 .help-section:hover {
-  background: #cccccc;
+  background: var(--gray2);
 }
 
 .searchBar {
@@ -247,7 +256,7 @@ body {
 }
 
 .content-hidden {
-  color: #f4f4f4;
+  color: var(--white);
 }
 
 /* shapes*/
@@ -255,7 +264,7 @@ body {
 .blueCircle {
   height: 22vw;
   width: 22vw;
-  background-color: #004A98;
+  background-color: var(--blue);
   border-radius: 50%;
   position: absolute;
   bottom: -130px;
@@ -266,7 +275,7 @@ body {
 .yellowCircle {
   height: 25vw;
   width: 25vw;
-  background-color: #ffce38;
+  background-color: var(--yellow);
   border-radius: 50%;
   position: absolute;
   top: -130px;
@@ -277,7 +286,7 @@ body {
 .circleplus {
   height: 3.5vw;
   width: 3.5vw;
-  background-color: #004A98;
+  background-color: var(--blue);
   border-radius: 50%;
   position: relative;
   display: inline-block;
@@ -285,11 +294,11 @@ body {
   z-index: 9;
   text-align: center;
   font-size: 3vw;
-  color: #f4f4f4;
+  color: var(--white);
 }
 
 .icons{
-  background-color: #f4f4f4;
+  background-color: var(--white);
   border: 1.5px solid black;
   border-radius: 50%;
   position: absolute;

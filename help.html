@@ -1,28 +1,88 @@
 <!DOCTYPE html>
-    <header>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </header>
+<header>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
 
-    <body>
-        <nav>
-            <button class="menu">Meniu</button>
-            <input class="searchBar" type="text" placeholder="Cauta...">
-            <button class="account">Cont</button>
-         </nav>
-        <p class = "center">
-         <div class="smallerwindow">
-            <div class="row">
-                <span class="dot" ></span>
-                <span class="dot" ></span>
-                <span class="dot" ></span>
-            </div>
-            <div class="insertImage"><img src="error.jpeg"></div> <!--provizorie -->
-            <div class="horizContainer">
-                <b>&lt  &gt</b>
-            </div>
+<body>
+    <nav>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+            <a href="#">
+                <div class="content">Pagina Principala</div>
+            </a>
+            <a href="#">
+                <div class="content">Clasa Mea</div>
+            </a>
+            <a href="#">
+                <div class="content">Probleme</div>
+            </a>
+            <a href="#">
+                <div class="content">Statistici</div>
+            </a>
+            <a href="about.html">
+                <div class="content">Despre noi</div>
+            </a>
         </div>
-    </p>
-     
-    </body>
+
+        <button class="menu" onclick="openNav()">
+            <div>Meniu</div>
+            <div class="center">
+                <div class="circleplus">
+                    <b>+</b>
+                </div>
+            </div>
+        </button>
+        <input class="searchBar" type="text" placeholder="Cauta...">
+        <button class="account-button">
+            <div>Cont</div>
+            <div class="center">
+                <div class="circleplus">AT</div>
+            </div>
+
+        </button>
+    </nav>
+
+    <div class="smallerwindow">
+        <div class="row">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <p class="center"></p>
+        <div class="insertImage">
+            <img src="error.jpeg">
+        </div> <!--provizorie -->
+        <div class="horizContainer"></div>
+    </div>
+
+    <div class="center">
+        <div class="help-section"><b>Ajutor</b>
+            <div class="circleplus"><b>?</b></div>
+        </div>
+        <div class="help-section">Ajutor1
+            <div class="circleplus"><b>+</b></div>
+        </div>
+        <div class="help-section">Ajutor2
+            <div class="circleplus"><b>+</b></div>
+        </div>
+        <div class="help-section">Ajutor3
+            <div class="circleplus"><b>+</b></div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    <div class="blueCircle"></div>
+    <div class="yellowCircle"></div>
+</body>
+
 </html>

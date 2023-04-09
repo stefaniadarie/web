@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<header>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Despre noi</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</header>
+</head>
 
 <body>
   <nav>
@@ -27,22 +30,20 @@
     </div>
 
     <button class="menu" onclick="openNav()">
-      <div>Meniu</div>
-      <div class="center">
-        <div class="circleplus">
-          <b>+</b>
-        </div>
-      </div>
-    </button>
+      <span>Meniu</span>
+      <span class="center">
+          <span class="circleplus">+</span>
+      </span>
+  </button>
     <input class="searchBar" type="text" placeholder="Cauta...">
     <button class="account-button">
-      <div>Cont</div>
-      <div class="center">
-        <div class="circleplus">AT</div>
-      </div>
+      <span>Cont</span>
+      <span class="center">
+          <span class="circleplus">AT</span>
+      </span>
 
-    </button>
-    <button class="helpBtn" onclick="location.href = 'help.html' ">Ajutor<icon>?</icon></button>
+  </button>
+    <button class="helpBtn" onclick="location.href = 'help.html' ">Ajutor<span class="icons">?</span></button>
   </nav>
 
   <div class="center">

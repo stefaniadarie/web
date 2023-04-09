@@ -1,11 +1,12 @@
 :root {
-  --yellow: #ffce38;
-  --blue: #004A98;
+  --yellow:#ffce38;
+  --blue:  #004A98;
   --white: #f4f4f4;
   --gray1: #cdcdcd;
   --gray2: #cccccc;
   --gray3: #818181;
   --gray4: #4d4d4d;
+  --black: #000000;
 }
 
 body {
@@ -66,7 +67,7 @@ body {
   margin-top: 4px;
   height: 1vw;
   width: 1vw;
-  border: 1.5px solid black;
+  border: 1.5px solid var(--black);
   background: var(--white);
   border-radius: 50%;
   display: inline-block;
@@ -145,7 +146,6 @@ body {
   border: 1.5px solid var(--gray4);
   background-color: var(--white);
   padding: 14px 28px;
-  font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
@@ -299,7 +299,7 @@ body {
 
 .icons {
   background-color: var(--white);
-  border: 1.5px solid black;
+  border: 1.5px solid var(--black);
   border-radius: 50%;
   position: absolute;
   height: 2vw;

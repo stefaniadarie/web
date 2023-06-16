@@ -1,0 +1,1 @@
+<p>Successfully registered. <a href="/informatix/public">Click here</a> for login</p>

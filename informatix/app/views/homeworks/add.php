@@ -1,4 +1,3 @@
-<div class="card form">
 <form action="/informatix/public/homeworks/add/<?= $data["class_id"] ?>" method="post">
 
     <div class="field">
@@ -16,4 +15,3 @@
 </form>
 
 <a href="/informatix/public/students/index/<?= $data["class_id"]?>">Back</a>
-</div>

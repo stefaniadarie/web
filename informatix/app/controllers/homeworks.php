@@ -5,11 +5,7 @@ class Homeworks extends Controller
     public function index($class_id) {
         $homework = $this->model("Homework");
         $homeworks = $homework->getAll($class_id);
-        
-        $this->view("layout/header");
-        $this->view("layout/menu");
-        $this->view("homeworks/index", ["homeworks" => $homeworks ? $homeworks : [], "class_id" => $class_id, "isTeacher" => Session::get(Config::get("session/session_name"))->user_type === "Teacher"]);
-        $this->view("layout/footer");
+        $this->view("homeworks/index", ["homeworks" => $homeworks, "class_id" => $class_id, "isTeacher" => Session::get(Config::get("session/session_name"))->user_type === "Teacher"]);
     }
 
     public function add($class_id) {
@@ -24,22 +20,15 @@ class Homeworks extends Controller
 
             Redirect::to("homeworks/" . $class_id);         
         }
-        
-        $this->view("layout/header");
-        $this->view("layout/menu");
+
         $this->view("homeworks/add", ["class_id" => $class_id]);
-        $this->view("layout/footer");
     }
 
     public function homework($homework_id) {
         $homeworks = $this->model("Homework");
         $homework = $homeworks->get($homework_id);
         $problems = $homeworks->getHomeworkProblems($homework_id);
-
-        $this->view("layout/header");
-        $this->view("layout/menu");
         $this->view("homeworks/homework", ["homework" => $homework, "problems" => $problems]);
-        $this->view("layout/footer");
     }
 
     public function selectproblem($homework_id) {
@@ -55,11 +44,7 @@ class Homeworks extends Controller
 
             Redirect::to("homeworks/homework/" . $homework_id);         
         }
-
-        $this->view("layout/header");
-        $this->view("layout/menu");
         $this->view("homeworks/selectproblem", ["homework_id" => $homework_id]);
-        $this->view("layout/footer");
 
     }
 

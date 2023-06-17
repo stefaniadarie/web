@@ -1,4 +1,3 @@
-<div class="card form">
 <form action="" method="post">
 
     <div class="field">
@@ -11,4 +10,3 @@
 </form>
 
 <a href="/informatix/public/classes">Back</a>
-</div>

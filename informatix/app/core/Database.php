@@ -25,8 +25,7 @@ class Database
     }
 
     public function query($sql, $params = array()) {
-        // echo $sql;
-        // print_r($params);
+        echo $sql . "<br/>";
         $this->_error = false;
         if ($this->_query = $this->_pdo->prepare($sql)) {
             if (count($params)) {

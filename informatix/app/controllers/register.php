@@ -19,6 +19,8 @@ class Register extends Controller
     }
 
     public function registered() {
+        $this->view("layout/header");
         $this->view('register/registered');
+        $this->view("layout/footer");
     }
 }

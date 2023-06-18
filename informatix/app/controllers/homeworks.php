@@ -24,14 +24,21 @@ class Homeworks extends Controller
             Redirect::to("homeworks/" . $class_id);         
         }
 
+        $this->view("layout/header");
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
         $this->view("homeworks/add", ["class_id" => $class_id]);
+        $this->view("layout/footer");
     }
 
     public function homework($homework_id) {
         $homeworks = $this->model("Homework");
         $homework = $homeworks->get($homework_id);
         $problems = $homeworks->getHomeworkProblems($homework_id);
+
+        $this->view("layout/header");
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
         $this->view("homeworks/homework", ["homework" => $homework, "problems" => $problems]);
+        $this->view("layout/footer");
     }
 
     public function selectproblem($homework_id) {
@@ -47,8 +54,10 @@ class Homeworks extends Controller
 
             Redirect::to("homeworks/homework/" . $homework_id);         
         }
+        $this->view("layout/header");
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
         $this->view("homeworks/selectproblem", ["homework_id" => $homework_id]);
-
+        $this->view("layout/footer");
     }
 
     // public function class($id) {

@@ -7,7 +7,7 @@ class Problems extends Controller
         $problems = $problem->getAll();
         $this->view("layout/header");
         $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
-        $this->view("problems/index", ["problems" => $problems, "user" => Session::get(Config::get("session/session_name"))]);
+        $this->view("problems/index", ["problems" => $problems ? $problems : [], "user" => Session::get(Config::get("session/session_name"))]);
         $this->view("layout/footer");
     }
 
@@ -27,7 +27,7 @@ class Problems extends Controller
         
         $this->view("layout/header");
         $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
-        $this->view("problems/index", ["problems" => $problems, "user" => Session::get(Config::get("session/session_name"))]);
+        $this->view("problems/index", ["problems" => $problems ? $problems : [], "user" => Session::get(Config::get("session/session_name"))]);
         $this->view("layout/footer");
     }
 

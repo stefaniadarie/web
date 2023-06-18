@@ -13,19 +13,19 @@ class Problem
     }
 
     public function get($name) {
-        $user = $this->_database->get("problems", array("name", "=", $name));
-        return $user->count() > 0 ? $user->first() : false;
+        $problem = $this->_database->get("problems", array("name", "=", $name));
+        return $problem->count() > 0 ? $problem->first() : false;
     }
 
     public function getById($id) {
-        $user = $this->_database->get("problems", array("id", "=", $id));
-        return $user->count() > 0 ? $user->first() : false;
+        $problem = $this->_database->get("problems", array("id", "=", $id));
+        return $problem->count() > 0 ? $problem->first() : false;
     }
 
     public function getHomeworkProblems($id) {
-        $user = $this->_database->query("SELECT * FROM homework_problems hp INNER JOIN problems p ON p.id = hp.problem_id WHERE hp.homework_id = ?", [$id]);
+        $problem = $this->_database->query("SELECT * FROM homework_problems hp INNER JOIN problems p ON p.id = hp.problem_id WHERE hp.homework_id = ?", [$id]);
         // $user = $this->_database->get("homeworks", array("id", "=", $id));
-        return $user->count() > 0 ? $user->results() : false;
+        return $problem->count() > 0 ? $problem->results() : false;
     }
 
     public function getAll() {
@@ -34,8 +34,8 @@ class Problem
     }
 
     public function getAllForTeacher($teacher_id) {
-        $students = $this->_database->get("problems", ["teacher_id", "=", $teacher_id]);
-        return $students->results();
+        $problems = $this->_database->get("problems", ["teacher_id", "=", $teacher_id]);
+        return $problems->results();
     }
 
     public function getPending() {

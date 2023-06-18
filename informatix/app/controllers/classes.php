@@ -27,7 +27,11 @@ class Classes extends Controller
             Redirect::to("classes");         
         }
 
+
+        $this->view("layout/header");
+        $this->view("layout/menu");
         $this->view("classes/add");
+        $this->view("layout/footer");
     }
 
 }

@@ -82,4 +82,45 @@ class Problems extends Controller
         $this->view("problems/add");
         $this->view("layout/footer");
     }
+
+    public function export() {
+        if (Input::exists()) {
+            $_problem = $this->model("Problem");
+            $problem = $_problem->get(Input::get("name"));
+            $problem_json = json_encode($problem);
+
+            $this->view("layout/header");
+            $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
+            $this->view("problems/export", ["problem_json" => $problem_json]);
+            $this->view("layout/footer");       
+        }
+
+        $this->view("layout/header");
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
+        $this->view("problems/export", ["problem_json" => false]);
+        $this->view("layout/footer");
+    }
+
+    public function import() {
+        if (Input::exists()) {
+            $problem = $this->model("Problem");
+
+            $problem_json = json_decode(Input::get("problem_json"));
+
+            $problem->create(array(
+                "name" => $problem_json->name,
+                "description" => $problem_json->description,
+                "teacher_id" => $problem_json->teacher_id,
+                "status" => "Pending"
+            ));
+
+            Redirect::to("problems/pending");         
+        }
+
+        $this->view("layout/header");
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
+        $this->view("problems/import");
+        $this->view("layout/footer");
+    }
 }
+

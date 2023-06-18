@@ -13,7 +13,7 @@ class Comments extends Controller
     }
 
     public function add($problem_id) {
-        echo $problem_id;
+    
         if (Input::exists()) {
             $comment = $this->model("comment");
             $comment->create(array(

@@ -16,8 +16,6 @@ class Students extends Controller
             $student = $this->model("Student");
             $user = $this->model("User");
             $addedStudent = $user->get(Input::get("name"));
-            echo $class_id;
-            echo $addedStudent->id;
             $student->create(array(
                 'class_id' => $class_id,
                 'user_id' => $addedStudent->id

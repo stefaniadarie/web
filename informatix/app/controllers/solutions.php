@@ -25,7 +25,6 @@ class Solutions extends Controller
 
         $problemModel = $this->model("Problem");
         $problem = $problemModel->getById($problem_id);
-        var_dump($problem);
         $this->view("solutions/add", ["problem" => $problem]);
     }
 }

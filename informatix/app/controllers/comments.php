@@ -7,7 +7,7 @@ class Comments extends Controller
         $comments = $comment->getAll($problem_id);
 
         $this->view("layout/header");
-        $this->view("layout/menu");
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
         $this->view("comments/index", ["comments" => $comments ? $comments : [], "problem_id" => $problem_id]);
         $this->view("layout/footer");
     }
@@ -25,7 +25,7 @@ class Comments extends Controller
         }
 
         $this->view("layout/header");
-        $this->view("layout/menu");
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
         $this->view("comments/add", ["problem_id" => $problem_id]);
         $this->view("layout/footer");
     }

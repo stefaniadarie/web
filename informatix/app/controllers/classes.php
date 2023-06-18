@@ -29,7 +29,7 @@ class Classes extends Controller
 
 
         $this->view("layout/header");
-        $this->view("layout/menu");
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
         $this->view("classes/add");
         $this->view("layout/footer");
     }

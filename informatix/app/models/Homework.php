@@ -23,14 +23,14 @@ class Homework
 
     public function get($id) {
         // $user = $this->_database->query("SELECT * FROM homeworks h INNER JOIN homework_problems hp ON h.id = hp.homework_id INNER JOIN problems p ON p.id = hp.problem_id WHERE h.class_id = ?", [$id]);
-        $user = $this->_database->get("homeworks", array("id", "=", $id));
-        return $user->count() > 0 ? $user->first() : false;
+        $homework = $this->_database->get("homeworks", array("id", "=", $id));
+        return $homework->count() > 0 ? $homework->first() : false;
     }
 
     public function getHomeworkProblems($id) {
-        $user = $this->_database->query("SELECT * FROM homework_problems hp INNER JOIN problems p ON p.id = hp.problem_id WHERE hp.homework_id = ?", [$id]);
+        $homework = $this->_database->query("SELECT * FROM homework_problems hp INNER JOIN problems p ON p.id = hp.problem_id WHERE hp.homework_id = ?", [$id]);
         // $user = $this->_database->get("homeworks", array("id", "=", $id));
-        return $user->count() > 0 ? $user->results() : false;
+        return $homework->count() > 0 ? $homework->results() : false;
     }
 
     // public function getStudents($class_id) {

@@ -25,7 +25,7 @@ class Report
         JOIN homeworks h ON hp.homework_id = h.id
         WHERE u.user_type = 'student'
           AND cs.class_id = $class_id
-          AND p.status = 1
+          AND p.status = 'Accepted'
           AND s.solution >= 7;");
         return $correct->results();
     }
@@ -41,7 +41,7 @@ class Report
         JOIN homeworks h ON hp.homework_id = h.id
         WHERE u.user_type = 'student'
           AND cs.class_id = $class_id
-          AND p.status = 1
+          AND p.status = 'Accepted'
           AND s.solution < 7;");
         return $incorrect->results();
     }

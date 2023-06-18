@@ -15,7 +15,7 @@
 </table>
 
 
-<?php if ($data["isTeacher"]) : ?>
+<?php if ($data["user"]->user_type === "Teacher") : ?>
 
     <a href="/informatix/public/students/add/<?= $data["class_id"] ?>">Add new student</a>
 

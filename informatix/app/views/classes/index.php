@@ -16,7 +16,7 @@
 </table>
 
 
-<?php if ($data["isTeacher"]): ?>
+<?php if ($data["user"]->user_type === "Teacher"): ?>
     <div class="button2">
         <a href="/informatix/public/classes/add">Add new class</a>
     </div>

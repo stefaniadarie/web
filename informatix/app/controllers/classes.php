@@ -12,8 +12,8 @@ class Classes extends Controller
         }
 
         $this->view("layout/header");
-        $this->view("layout/menu", ["isTeacher" => Session::get(Config::get("session/session_name"))->user_type === "Teacher"]);
-        $this->view("classes/index", ["classes" => $classes, "isTeacher" => Session::get(Config::get("session/session_name"))->user_type === "Teacher"]);
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
+        $this->view("classes/index", ["classes" => $classes, "user" => Session::get(Config::get("session/session_name"))]);
         $this->view("layout/footer");
     }
 

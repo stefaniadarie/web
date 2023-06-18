@@ -28,7 +28,7 @@ CREATE TABLE `problems` (
   `name` varchar(20) NOT NULL,
   `description` varchar(200) NOT NULL,
   `teacher_id` int(5) NOT NULL,
-  `status` int(1) NOT NULL,
+  `status` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 

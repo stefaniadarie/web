@@ -5,9 +5,9 @@ class Homeworks extends Controller
     public function index($class_id) {
         $homework = $this->model("Homework");
         $homeworks = $homework->getAll($class_id);
-        $this->view("homeworks/index", ["homeworks" => $homeworks, "class_id" => $class_id, "isTeacher" => Session::get(Config::get("session/session_name"))->user_type === "Teacher"]);
         $this->view("layout/header");
-        $this->view("layout/menu", ["isTeacher" => Session::get(Config::get("session/session_name"))->user_type === "Teacher"]);
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
+        $this->view("homeworks/index", ["homeworks" => $homeworks, "class_id" => $class_id, "user" => Session::get(Config::get("session/session_name"))]);
         $this->view("layout/footer");
     }
 

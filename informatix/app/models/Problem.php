@@ -38,4 +38,12 @@ class Problem
         return $students->results();
     }
 
+    public function getPending() {
+        $problems = $this->_database->get("problems", array("status", "=", "Pending"));
+        return $problems->count() > 0 ? $problems->results() : false;
+    }
+
+    public function update($problem_id, $fields = []) {
+        $this->_database->update("problems", $problem_id, $fields);
+    }
 }

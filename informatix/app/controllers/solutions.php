@@ -3,7 +3,7 @@
 class Solutions extends Controller
 {
     public function index() {
- 
+        
     }
 
     public function add($problem_id) {
@@ -12,7 +12,8 @@ class Solutions extends Controller
             $solution->create(array(
                 "problem_id" => $problem_id,
                 "user_id" => Session::get(Config::get("session/session_name"))->id,
-                "solution" => Input::get("solution")
+                "solution" => Input::get("solution"),
+                "rating" => Input::get("rating")
             ));
             Redirect::to("problems/problem/" . $problem_id);         
         }

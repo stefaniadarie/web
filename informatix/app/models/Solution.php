@@ -12,5 +12,9 @@ class Solution
         $this->_database->insert('solution', $fields);
     }
 
+    public function saveRating($student_id){
+        $rating = $this->_database->get("rating", ["student_id", "=", $student_id]);
+        return $rating->results();
+    }
 
 }

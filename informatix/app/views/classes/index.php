@@ -4,9 +4,9 @@
 <table>
     <?php for ($i = 0; $i < count($data['classes']); $i++) { ?>
         <tr>
-            <td>
+            <td>       </div>
                 <a href="/informatix/public/students/index/<?= $data['classes'][$i]->id ?>">
-                    <div class="button center">
+                    <div class="button">
                         <?= $data['classes'][$i]->name ?>
                     </div>
                 </a>

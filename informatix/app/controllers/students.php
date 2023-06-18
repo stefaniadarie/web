@@ -5,7 +5,7 @@ class Students extends Controller
     public function index($class_id) {
         $student = $this->model("Student");
         $students = $student->getStudents($class_id);
-        $this->view("students/index", ["students" => $students, "class_id" => $class_id, "user" => Session::get(Config::get("session/session_name"))]);
+        $this->view("students/index", ["students" => $students ? $students : [], "class_id" => $class_id, "user" => Session::get(Config::get("session/session_name"))]);
     }
 
     public function add($class_id) {
@@ -28,6 +28,6 @@ class Students extends Controller
     public function class($id) {
         $class = $this->model("clazz");
         $students = $class->getStudents($id);
-        $this->view("classes/class", ["students" => $students, "teacher" => false]);
+        $this->view("classes/class", ["students" => $students ? $students : [], "teacher" => false]);
     }
 }

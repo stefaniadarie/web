@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="/informatix/resources/style.css">
+</head>
 <form action="/informatix/public/students/add/<?= $data["class_id"] ?>" method="post">
 
     <div class="field">

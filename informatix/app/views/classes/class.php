@@ -1,25 +1,30 @@
-<table>
-<?php for($i = 0; $i < count($data['students']); $i++) {?>
-    <tr>
-        <td>
-            <a href="/informatix/public/classes/class/<?= $data['students'][$i]->id?>">
-                <?= $data['students'][$i]->name ?>
-            </a>
-        </td>
-    </tr>
-    <?php } ?>
-</table>
+<head>
+    <link rel="stylesheet" href="/informatix/resources/style.css">
+</head>
 
-<p>asd</p>
+<body>
+    <table>
+        <?php for ($i = 0; $i < count($data['students']); $i++) { ?>
+            <tr>
+                <td>
+                    <a href="/informatix/public/classes/class/<?= $data['students'][$i]->id ?>">
+                        <div class="card"><?= $data['students'][$i]->name ?></div>
+                    </a>
+                </td>
+            </tr>
+        <?php } ?>
+    </table>
 
-<?php echo "asd" . $data["teacher"]; ?>
+    <p>asd</p>
 
-<?php if ($data["teacher"]) : ?>
+    <?php echo "asd" . $data["teacher"]; ?>
 
-<a href="/informatix/public/classes/add">Add new student</a>
+    <?php if ($data["teacher"]): ?>
 
-<?php endif;?>
+        <a href="/informatix/public/classes/add"><div class="button3">Add new student</a>
+    <?php endif; ?>
 
-<a href="/informatix/public/classes">Back</a>
+    <a href="/informatix/public/classes">Back</a>
 
-<p>asd</p>
+    <p>asd</p>
+</body>

@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="/informatix/resources/style.css">
+</head>
+
 <p> <?= $data["homework"]->name ?> </p>
 
 <table>
@@ -5,7 +9,7 @@
     <tr>
         <td>
             <a href="/informatix/public/problems/problem/<?= $data['problems'][$i]->id?>">
-                <?= $data['problems'][$i]->name ?>
+            <div class=button><?= $data['problems'][$i]->name ?></div>
             </a>
         </td>
     </tr>
@@ -14,5 +18,6 @@
 
 
 <a href="/informatix/public/homeworks/selectproblem/<?= $data["homework"]->id ?>">Select problem</a>
-
+<div class=button>
 <a href="/informatix/public/homeworks/">Back</a>
+</div>

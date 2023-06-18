@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="/informatix/resources/style.css">
+</head>
 <form class="card form" action="/informatix/public/problems/add/" method="post">
 
     <div class="field">

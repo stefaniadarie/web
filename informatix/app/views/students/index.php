@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="/informatix/resources/style.css">
+</head>
+<body>
 <table>
 <?php for($i = 0; $i < count($data['students']); $i++) {?>
     <tr>
@@ -20,3 +24,4 @@
 <a href="/informatix/public/homeworks/index/<?= $data["class_id"] ?>">Homeworks</a>
 
 <a href="/informatix/public/classes">Back</a>
+</body>

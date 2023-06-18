@@ -1,7 +1,22 @@
-body {
-    background-color: lightgray;
+:root {
+  --yellow:#ffce38;
+  --blue:  #004A98;
+  --white: #f4f4f4;
+  --gray1: #cdcdcd;
+  --gray2: #cccccc;
+  --gray3: #818181;
+  --gray4: #4d4d4d;
+  --black: #000000;
+  --green: #45a049;
 }
 
+body {
+  opacity: 1;
+  background-image: linear-gradient(var(--gray1) 1.5px, transparent 1px), linear-gradient(to right, var(--gray1) 1.5px, var(--white) 1px);
+  background-size: 20px 20px;
+  overflow: hidden;
+
+}
 .form {
     margin: auto;
     width: 50%;
@@ -9,9 +24,129 @@ body {
 
 .card {
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--black);
     padding: 10px;
 }
+
+.window {
+    background-color: var(--white);
+    border: 1.5px solid var(--gray4);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-radius: 20px;
+    min-height: 300px;
+    min-width: 70vw;
+  }
+  
+
+.header {
+  height: 30px;
+  border-bottom: 1px solid var(--black);
+  padding: 8px;
+  background-color: var(--gray2);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.dot {
+  margin-top: 4px;
+  height: 1vw;
+  width: 1vw;
+  border: 1.5px solid var(--black);
+  background: var(--white);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    margin-top: 25vh;
+}
+
+.signUpBtn,
+.logInBtn,
+.helpBtn,
+.aboutBtn,
+.account,
+.searchBar,
+.menu,
+.account-button,
+.help-section,
+.button,
+.button2,
+.button3 {
+  border: 1.5px solid var(--gray4);
+  background-color: var(--white);
+  padding: 14px 28px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.aboutBtn {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    width: 14%;
+    text-align: center;
+  }
+
+  .helpBtn {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    z-index: 4;
+    width: 14%;
+    text-align: center;
+  }
+
+  .button2 {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 14%;
+    text-align: center;
+  }
+
+  .button3 {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 14%;
+    text-align: center;
+  }
+
+  .button {
+    border-radius: 10px;
+    background-color: var(--green);
+    padding: 10px;
+    left: 25vw;
+  }
+
+.blueCircle {
+    height: 22vw;
+    width: 22vw;
+    background-color: var(--blue);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -130px;
+    right: 15px;
+    z-index: 3;
+  }
+  
+  .yellowCircle {
+    height: 25vw;
+    width: 25vw;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    position: absolute;
+    top: -130px;
+    margin-left: -100px;
+    z-index: 0;
+  }
+  
 
 input[type=text], input[type=password], select, textarea {
   width: 100%;
@@ -30,7 +165,7 @@ label {
 
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: var(--blue);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -40,7 +175,7 @@ input[type=submit] {
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: --green;
   }
 
 .menu {

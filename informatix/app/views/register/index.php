@@ -1,7 +1,7 @@
 <div class="card form">
     <form action="" method="post">
         <div class="field">
-            <label for="name">Name</label>
+            <label for="name">Full Name</label>
             <input type="text" name="name" id="name" value="" required/>
         </div>
 

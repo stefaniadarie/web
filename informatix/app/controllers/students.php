@@ -5,7 +5,10 @@ class Students extends Controller
     public function index($class_id) {
         $student = $this->model("Student");
         $students = $student->getStudents($class_id);
+        $this->view("layout/header");
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
         $this->view("students/index", ["students" => $students, "class_id" => $class_id, "user" => Session::get(Config::get("session/session_name"))]);
+        $this->view("layout/footer");
     }
 
     public function add($class_id) {
@@ -29,5 +32,10 @@ class Students extends Controller
         $class = $this->model("clazz");
         $students = $class->getStudents($id);
         $this->view("classes/class", ["students" => $students, "teacher" => false]);
+    }
+    public function solution($problem_id) {
+        $solution = $this->model("solution");
+        $students = $solution->getSolution($problem_id);
+        $this->view("homeworks/homework", ["students" => $students, "teacher" => false]);
     }
 }

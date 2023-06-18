@@ -1,7 +1,5 @@
-<head>
-    <link rel="stylesheet" href="/informatix/resources/style.css">
-</head>
-<form class="card form" action="/informatix/public/problems/add/" method="post">
+
+<form class="window center form" action="/informatix/public/problems/add/" method="post">
 
     <div class="field">
         <label for="name">Problem name</label>
@@ -17,5 +15,3 @@
     <input type="submit" value="Add problem"/>
 
 </form>
-
-<a href="/informatix/public/students/index/<?= $data["class_id"]?>">Back</a>

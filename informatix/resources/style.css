@@ -24,7 +24,8 @@ body {
 
 .card {
     border-radius: 10px;
-    background-color: var(--black);
+    background-color: var(--white);
+    border-color: var(--black);
     padding: 10px;
 }
 
@@ -34,10 +35,23 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-radius: 20px;
-    min-height: 300px;
+    min-height: 50vh;
     min-width: 70vw;
+    padding: 10px;
   }
   
+  .window2 {
+    background-color: var(--white);
+    border: 1.5px solid var(--gray4);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-radius: 20px;
+    min-height: 250px;
+    min-width: 65vw;
+    max-width: 80vw;
+    padding: 20px;
+    margin-top:30vh;
+  }  
 
 .header {
   height: 30px;
@@ -60,8 +74,12 @@ body {
 
 .center {
     margin: auto;
-    width: 50%;
-    margin-top: 25vh;
+    margin-top: 17vh;
+}
+
+.center2 {
+  margin-left: 1vw;
+  margin-top: 30vh;
 }
 
 .signUpBtn,
@@ -75,7 +93,8 @@ body {
 .help-section,
 .button,
 .button2,
-.button3 {
+.button3,
+.button4 {
   border: 1.5px solid var(--gray4);
   background-color: var(--white);
   padding: 14px 28px;
@@ -114,6 +133,13 @@ body {
     position: absolute;
     top: 15%;
     left: 40%;
+    width: 14%;
+    text-align: center;
+  }
+  .button4 {
+    position: absolute;
+    top: 15%;
+    left: 40vw;
     width: 14%;
     text-align: center;
   }

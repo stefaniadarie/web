@@ -37,6 +37,7 @@ CREATE TABLE `solution` (
   `problem_id` int(5) NOT NULL,
   `user_id` int(5) NOT NULL,
   `solution` varchar(1000) NOT NULL,
+  `rating` int(5) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

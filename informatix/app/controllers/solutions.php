@@ -3,7 +3,12 @@
 class Solutions extends Controller
 {
     public function index() {
-        
+        // $solution=$this->model("Solution");
+        // $solutions =$solution->getSolution($problem_id);
+        // $this->view("layout/header");
+        // $this->view("layout/menu", ["isTeacher" => Session::get(Config::get("session/session_name"))->user_type === "Teacher"]);
+        // //$this->view("homeworks/homework", ["solutions" => $solutions]);
+        // $this->view("layout/footer");
     }
 
     public function add($problem_id) {

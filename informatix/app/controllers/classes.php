@@ -13,7 +13,7 @@ class Classes extends Controller
 
         $this->view("layout/header");
         $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
-        $this->view("classes/index", ["classes" => $classes, "user" => Session::get(Config::get("session/session_name"))]);
+        $this->view("classes/index", ["classes" => $classes ? $classes : [], "user" => Session::get(Config::get("session/session_name"))]);
         $this->view("layout/footer");
     }
 

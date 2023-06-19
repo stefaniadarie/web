@@ -56,7 +56,7 @@ class Homeworks extends Controller
         }
         $this->view("layout/header");
         $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
-        $this->view("homeworks/selectproblem", ["homework_id" => $homework_id]);
+        $this->view("homeworks/selectproblem", ["homework_id" => $homework_id, "user" => Session::get(Config::get("session/session_name"))]);
         $this->view("layout/footer");
     }
 

@@ -4,7 +4,7 @@
 
 <div class="center">
 <form action="/informatix/public/solutions/add/<?= $data["problem"]->id ?>" method="post">
-    <h3>
+    <h3 class="card">
         <?= $data["problem"]->description ?>
 </h3>
 

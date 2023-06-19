@@ -75,7 +75,7 @@ class Problems extends Controller
                 "status" => "Pending"
             ));
 
-            Redirect::to("myproblems");         
+            Redirect::to("problems/myproblems");         
         }
 
         $this->view("layout/header");

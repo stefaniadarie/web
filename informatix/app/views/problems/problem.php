@@ -3,12 +3,14 @@
     <p>
         <?= $data["problems"]->description ?>
     </p>
+    <?php if ($data["solution"]) : ?>
     <p>Solution:
         <?= $data["solution"]->solution ?>
     </p>
     <p>Rating:
         <?= $data["solution"]->rating ?>
     </p>
+    <?php endif; ?>
 </div>
 <?php if ($data["user"]->user_type === "Student"): ?>
 

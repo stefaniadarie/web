@@ -3,7 +3,7 @@
     <tr>
         <td>
             <a href="/informatix/public/problems/pendingproblem/<?= $data['problems'][$i]->id?>">
-                <?= $data['problems'][$i]->name ?>
+                <div class="center2 button"><?= $data['problems'][$i]->name ?></div>
             </a>
         </td>
     </tr>

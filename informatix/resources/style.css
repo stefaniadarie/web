@@ -14,7 +14,7 @@ body {
   opacity: 1;
   background-image: linear-gradient(var(--gray1) 1.5px, transparent 1px), linear-gradient(to right, var(--gray1) 1.5px, var(--white) 1px);
   background-size: 20px 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 .form {
@@ -83,15 +83,10 @@ body {
   margin-top: 30vh;
 }
 
-.signUpBtn,
-.logInBtn,
+
 .helpBtn,
 .aboutBtn,
-.account,
-.searchBar,
 .menu,
-.account-button,
-.help-section,
 .button,
 .button2,
 .button3,
@@ -106,7 +101,7 @@ body {
 }
 
 .aboutBtn {
-    position: absolute;
+    position: fixed;
     bottom: 2%;
     left: 5%;
     width: 14%;
@@ -114,7 +109,7 @@ body {
   }
 
   .helpBtn {
-    position: absolute;
+    position: fixed;
     bottom: 2%;
     right: 5%;
     z-index: 4;
@@ -223,4 +218,20 @@ input[type=submit] {
 
     text-decoration: none;
     color: initial;
+}
+
+.text_style{
+  text-align: center;
+  padding: 100px;
+  font-size: 90;
+}
+
+.text_style2{
+  text-align: center;
+  font-size: 70;
+}
+
+.text_style3{
+  text-align: center;
+  font-size: 40;
 }

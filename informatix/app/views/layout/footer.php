@@ -1,4 +1,4 @@
-<!-- <div><button class="aboutBtn" onclick="location.href = 'about.html' ">About us</div>
+<div><button class="aboutBtn" onclick="location.href = 'aboutus' ">About us</div>
     <div class="yellowCircle"></div>
     <div class="blueCircle"></div>
-    <button class="helpBtn" onclick="location.href = 'help.html' ">Help</button> -->
+    <button class="helpBtn" onclick="location.href = 'help.html' ">Help</button>

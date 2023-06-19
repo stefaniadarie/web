@@ -1,4 +1,4 @@
-<div class="card form">
+<div class="card center form">
     <form action="" method="post">
         <div class="field">
             <label for="name">Full Name</label>

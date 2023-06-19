@@ -25,6 +25,9 @@ class Solutions extends Controller
 
         $problemModel = $this->model("Problem");
         $problem = $problemModel->getById($problem_id);
+        $this->view("layout/header");
+        $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
         $this->view("solutions/add", ["problem" => $problem]);
+        $this->view("layout/footer");
     }
 }

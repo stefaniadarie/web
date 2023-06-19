@@ -10,7 +10,7 @@ class Database
             $_count = 0;
     private function __construct() {
         try {
-            $this->_pdo = new PDO('mysql:host=' . Config::get('mysql/host') . ';port=8889;dbname=' . Config::get('mysql/database'), Config::get('mysql/username'), Config::get('mysql/password'));
+            $this->_pdo = new PDO('mysql:host=' . Config::get('mysql/host') . ';port=10001;dbname=' . Config::get('mysql/database'), Config::get('mysql/username'), Config::get('mysql/password'));
             $this->_pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch(PDOException $e) {
             die($e->getMessage());
@@ -25,7 +25,6 @@ class Database
     }
 
     public function query($sql, $params = array()) {
-        echo $sql . "<br/>";
         $this->_error = false;
         if ($this->_query = $this->_pdo->prepare($sql)) {
             if (count($params)) {

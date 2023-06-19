@@ -3,17 +3,13 @@
     <p>
         <?= $data["problems"]->description ?>
     </p>
-    <!-- <?php for ($i = 0; $i < count($data['students']); $i++) { ?>
-        <tr>
-            <td>
-
-                <a href="/informatix/public/comments/index/<?= $data["problems"]->id ?> <?= $data['students'][$i]->name ?>
-     
-        </td>
-    </tr>
-    <?php } ?> -->
+    <p>Solution:
+        <?= $data["solution"]->solution ?>
+    </p>
+    <p>Rating:
+        <?= $data["solution"]->rating ?>
+    </p>
 </div>
-
 <?php if ($data["user"]->user_type === "Student"): ?>
 
     <div class=" button3">

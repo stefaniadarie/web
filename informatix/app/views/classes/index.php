@@ -18,5 +18,5 @@
 
 <?php endif; ?>
 <div class="button3">
-    <a href="/informatix/public/">Back</a>
+    <a href="/informatix/public/home">Back</a>
 </div>

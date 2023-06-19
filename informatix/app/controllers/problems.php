@@ -14,10 +14,11 @@ class Problems extends Controller
     public function problem($problem_id) {
         $problem = $this->model("Problem");
         $problems = $problem->getById($problem_id);
-
+        $solution = $this->model("Solution");
+        $solutions =$solution->getSolution($problem_id);
         $this->view("layout/header");
         $this->view("layout/menu", ["user" => Session::get(Config::get("session/session_name"))]);
-        $this->view("problems/problem", ["problems" => $problems, "user" => Session::get(Config::get("session/session_name"))]);
+        $this->view("problems/problem", ["problems" => $problems, "solution" => $solutions, "user" => Session::get(Config::get("session/session_name"))]);
         $this->view("layout/footer");
     }
 

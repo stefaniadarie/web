@@ -18,6 +18,6 @@ class Solution
     }
     public function getSolution($problem_id){
         $solution = $this->_database->get("solution", ["problem_id", "=", $problem_id]);
-        return $solution->results();
+        return $solution->first();
     }
 }

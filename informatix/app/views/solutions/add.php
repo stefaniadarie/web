@@ -2,15 +2,15 @@
     <link rel="stylesheet" href="/informatix/resources/style.css">
 </head>
 
-
+<div class="center">
 <form action="/informatix/public/solutions/add/<?= $data["problem"]->id ?>" method="post">
     <h3>
         <?= $data["problem"]->description ?>
 </h3>
 
     <div class="field">
-        <label for="Solution">Solution</label>
-        <textarea name="description" id="description" value="" rows="4" required></textarea>
+        <label for="solution">Solution</label>
+        <textarea name="solution" id="solution" value="" rows="4" required></textarea>
     </div>
 
 
@@ -25,6 +25,6 @@
     </p>
 
     <input type="submit" value="Submit" />
-    <a href="/informatix/public/problems/">Cancel</a>
-
+    <div class="button"><a href="/informatix/public/problems/">Cancel</a></div>
+    </div>
 </form>
